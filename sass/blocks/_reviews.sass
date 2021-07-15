@@ -44,10 +44,19 @@
       transform: translateY(-50%)
       width: 30px
       height: 30px
-      background-repeat:
+      background-repeat: no-repeat
       background-size: 10px
+      background-position: center
+      border: 0
+      background-color: transparent
+      cursor: pointer
+      z-index: 99
       &--prev
-        background-image: url(../img/)
+        background-image: url(../img/arrow-prev-secondary.svg)
+        left: 0
+      &--next
+        background-image: url(../img/arrow-next-primory.svg)
+        right: 0
     &__profile
       display: flex
       flex-direction: column

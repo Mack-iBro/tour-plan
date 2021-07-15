@@ -14,10 +14,6 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- yandex api -->
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=0a34a3d2-c2d6-461d-99df-58d655ec1237&lang=ru_RU"
-      type="text/javascript"
-    ></script>
   </head>
   <body>
     <header class="navbar">
@@ -138,28 +134,28 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide hotel-slider__item">
-                <img class="swiper-slide__image" src="img/slide.jpg" alt="" />
+                <img class="hotel-slider__image" src="img/slide.jpg" alt="" />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
-                  class="swiper-slide__image"
+                  class="hotel-slider__image"
                   src="img/blue_space.jpg"
                   alt=""
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
-                  class="swiper-slide__image"
+                  class="hotel-slider__image"
                   src="img/sunset_in_the_mountains.jpg"
                   alt=""
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img class="swiper-slide__image" src="img/space.jpg" alt="" />
+                <img class="hotel-slider__image" src="img/space.jpg" alt="" />
               </div>
               <div class="swiper-slide__item">
                 <img
-                  class="swiper-slide__image"
+                  class="hotel-slider__image"
                   src="img/view_from_the_mountain.jpg"
                   alt=""
                 />
@@ -219,8 +215,8 @@
             <div class="map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.7068615958538!2d37.48279671625409!3d55.83304718057489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5481b0f9c9949%3A0x1aa05ec2e60a61bf!2sDoubleTree%20by%20Hilton%20Hotel%20Moscow%20-%20Marina!5e0!3m2!1sru!2sru!4v1626281735960!5m2!1sru!2sru"
-                width="347px"
-                height="213px"
+                width="100%"
+                height="100%"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
@@ -233,7 +229,11 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="newsletter">
+    <section
+      class="newsletter"
+      data-parallax="scroll"
+      data-image-src="img/newsletter-bg.jpg"
+    >
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
@@ -353,34 +353,7 @@
                   the Gothic novel by Percy Bysshe Shelley. Her first film was
                   Caravaggio in 1986, directed by Derek Jarman. She went on to
                   star in several Jarman films, including The Last of England
-                  (1987),[23] War Requiem (1989)[23] opposite Laurence Olivier,
-                  and Edward II (1991),[23] for which she won the Volpi Cup for
-                  Best Actress at the 1991 Venice Film Festival.[24] Swinton
-                  performed in the performance art piece Volcano Saga by Joan
-                  Jonas in 1989. The 28-minute video art piece is based on a
-                  13th-century Icelandic Laxdeala Saga, and it tells a
-                  mythological myth of a young woman whose dreams tell of the
-                  future. Swinton also played the title role in Orlando, Sally
-                  Potter's film version of the novel by Virginia Woolf. The part
-                  allowed Swinton to explore matters of gender presentation
-                  onscreen, which reflected her lifelong interest in androgynous
-                  style. Swinton later reflected on the role in an interview
-                  accompanied by a striking photo shoot. "People talk about
-                  androgyny in all sorts of dull ways," said Swinton, noting
-                  that the recent rerelease of Orlando had her thinking again
-                  about its pliancy. She referred to 1920s French artist and
-                  playful gender-bender Claude Cahun: "Cahun looked at the
-                  limitlessness of an androgynous gesture, which I've always
-                  been interested in."[25] Recent years have seen Swinton move
-                  toward mainstream projects, including the leading role in the
-                  American film The Deep End (2001), in which she played the
-                  mother of a gay son she suspects of killing his boyfriend. For
-                  this performance, she was nominated for a Golden Globe Award.
-                  She appeared as a supporting character in the films The Beach
-                  (2000),[23] featuring Leonardo DiCaprio, Vanilla Sky (2001),
-                  and as the archangel Gabriel in Constantine. Swinton appeared
-                  in the British films The Statement (2003) and Young Adam
-                  (2003).
+                  (1987)
                 </p>
               </div>
               <!-- /.reviews-slider__item -->
@@ -400,6 +373,12 @@
       </div>
       <!-- /.container -->
     </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

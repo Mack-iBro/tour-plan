@@ -1,4 +1,6 @@
-const hotelSlider = new Swiper('.hotel-slider', {
+
+$( document ).ready(function()  {
+  const hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
 
@@ -25,4 +27,7 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     enabled: true,
     onlyInViewport: false,
   },
+});
+$('.newsletter').parallax();
+    
 });

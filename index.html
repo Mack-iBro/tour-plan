@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -112,7 +112,7 @@
                 <img src="img/star.svg" alt="star" />
                 <img src="img/star.svg" alt="star" />
               </div>
-              <h1 class="hotel-name hotel-info__name">grand hilton hotel</h1>
+              <h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
               <span class="offer hotel-info__offer">flash offer</span>
             </div>
             <p class="hotel-description hotel-info__description">
@@ -123,7 +123,9 @@
           <!-- /.hotel-info__text -->
           <div class="rating hotel-info__rating">
             <span class="rating__text">User Ratting</span>
-            <span class="rating__counter">4.5/5</span>
+            <span class="rating__counter"
+              >4.5/<span class="rating__min">5</span></span
+            >
           </div>
           <!-- /.hotel-info__right -->
         </div>
@@ -153,7 +155,7 @@
               <div class="swiper-slide hotel-slider__item">
                 <img class="hotel-slider__image" src="img/space.jpg" alt="" />
               </div>
-              <div class="swiper-slide__item">
+              <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
                   src="img/view_from_the_mountain.jpg"
@@ -373,6 +375,47 @@
       </div>
       <!-- /.container -->
     </section>
+    <section class="activities">
+      <div class="container">
+        <h2 class="activities__title">Other Activities</h2>
+        <div class="activities-wrapper">
+          <div class="card activities__card">
+            <img
+              src="img/corner_of_chamarel.jpg"
+              alt="The curious corner of chamarel"
+              class="card__image"
+            />
+            <h3 class="card__title">The curious corner of chamarel</h3>
+            <button class="card__button">Book Now</button>
+          </div>
+          <div class="card activities__card">
+            <img
+              src="img/golf_club.jpg"
+              alt="Gymkhana club golf course"
+              class="card__image"
+            />
+            <h3 class="card__title">Gymkhana club golf course</h3>
+            <button class="card__button">Book Now</button>
+          </div>
+          <div class="card activities__card">
+            <img
+              src="img/rock_with_a_waterfall.jpg"
+              alt=""
+              class="card__image"
+            />
+            <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
+            <button class="card__button">Book Now</button>
+          </div>
+          <div class="card activities__card">
+            <img src="img/quest_at_sea.jpg" alt="" class="card__image" />
+            <h3 class="card__title">The blue marine discovery quest</h3>
+            <button class="card__button">Book Now</button>
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+    </section>
+    <!-- /.activities -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

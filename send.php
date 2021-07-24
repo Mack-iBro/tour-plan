@@ -36,7 +36,7 @@ try {
     $mail->setFrom('', '.'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('');  
+    $mail->addAddress('s');  
 
     // Отправка сообщения
     $mail->isHTML(true);

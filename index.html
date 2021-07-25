@@ -152,7 +152,11 @@
             </p>
           </div>
           <!-- /.hotel-info__text -->
-          <div class="rating hotel-info__rating">
+          <div
+            data-toggle="modal"
+            data-href="#rating-modal"
+            class="rating hotel-info__rating"
+          >
             <span class="rating__text">User Ratting</span>
             <span class="rating__counter"
               >4.5/<span class="rating__min">5</span></span
@@ -242,7 +246,13 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">Viev Other Options</button>
+              <button
+                data-toggle="modal"
+                data-href="#booking-modal"
+                class="button booking__button"
+              >
+                Viev Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -587,7 +597,7 @@
           </div>
           <!-- /footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title">Send us message</h3>
+            <h3 class="footer__title footer__title--mb-3">Send us message</h3>
             <form action="send.php" method="POST" class="footer__form">
               <input
                 type="text"
@@ -602,7 +612,7 @@
                 name="phone"
               />
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 placeholder="message"
                 name="message"
               ></textarea>
@@ -616,7 +626,78 @@
       </div>
       <!-- /.container -->
     </footer>
-    <!-- /.activities -->
+    <div class="modal" id="booking-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="" class="modal__close"
+          ><img src="img/close.svg" alt="icon: close"
+        /></a>
+        <h3 class="modal__title modal__title--mb-3">Booking</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="email*"
+            name="email"
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="message"
+            name="message"
+          ></textarea>
+          <button class="button modal__button" type="submit">send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="rating-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="" class="modal__close"
+          ><img src="img/close.svg" alt="icon: close"
+        /></a>
+        <h3 class="modal__title modal__title--mb-3">Send us raiting</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="message"
+            name="message"
+          ></textarea>
+          <button class="button modal__button" type="submit">send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

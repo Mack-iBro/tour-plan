@@ -46,11 +46,16 @@ img {
   border-radius: 4px;
 }
 
-form {
+.form {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.invalid {
+  color: #EC1F46;
+  border-bottom: 2px solid #EC1F46;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -834,6 +839,7 @@ template {
 
 .subscribe__button {
   position: absolute;
+  cursor: pointer;
   min-width: 65px;
   right: 0;
   top: 0;
@@ -1037,6 +1043,7 @@ template {
   border: none;
   border-radius: 4px;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .footer {
@@ -1044,6 +1051,10 @@ template {
   color: #fff;
   padding-top: 100px;
   padding-bottom: 46px;
+}
+
+.footer__button {
+  cursor: pointer;
 }
 
 .footer-wrapper {
@@ -1141,6 +1152,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   flex-basis: 48%;
 }
@@ -1221,13 +1236,18 @@ textarea {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
+  cursor: pointer;
 }
 
 .modal__info {
@@ -1257,7 +1277,7 @@ textarea {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 100%;
   }
 }
@@ -1323,7 +1343,7 @@ textarea {
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 40px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 49%;
   }
   .footer__logo {
@@ -1492,7 +1512,7 @@ textarea {
     width: 49%;
     height: 255px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 100%;
   }
 }

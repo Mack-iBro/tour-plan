@@ -3,6 +3,8 @@
   color: $light
   padding-top: 100px
   padding-bottom: 46px
+  &__button
+    cursor: pointer
   &-wrapper
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
@@ -30,11 +32,6 @@
       grid-column-start: span 2
     &-form
       grid-column: span 2
-  // &__form
-  //   display: flex
-  //   align-items: center
-  //   justify-content: space-between
-  //   flex-wrap: wrap
   &__ul
     padding: 0
     margin: 0
@@ -74,8 +71,10 @@
     font-size: 14px
     line-height: 160%
   &__input
-    margin-bottom: 15px
-    flex-basis: 48%
+    width: 100%
+    &-group
+      margin-bottom: 15px
+      flex-basis: 48%
   &__message
     flex-basis: 100%
     margin-bottom: 23px

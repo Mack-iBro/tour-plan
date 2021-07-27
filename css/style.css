@@ -1166,9 +1166,11 @@ template {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer__input-group {
+  width: 100%;
   position: relative;
   margin-bottom: 15px;
   flex-basis: 48%;

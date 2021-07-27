@@ -285,12 +285,14 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="subscribe newsletter__subscribe form"
         >
           <input
+            name="email"
             type="email"
-            class="subscribe__imput"
+            class="subscribe__input"
             placeholder="Your email address"
+            required
           />
           <button class="subscribe__button">send</button>
         </form>
@@ -603,23 +605,25 @@
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us message</h3>
             <form action="send.php" method="POST" class="footer__form form">
-              <div class="footer__input-group">
-                <input
-                  type="text"
-                  class="input footer__input"
-                  placeholder="Your Full Name*"
-                  name="name"
-                  required
-                />
-              </div>
-              <div class="footer__input-group">
-                <input
-                  type="tel"
-                  class="input footer__input"
-                  placeholder="Phone Number*"
-                  name="phone"
-                  required
-                />
+              <div class="footer__input-wrapper">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input input__phone form"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                  />
+                </div>
               </div>
               <textarea
                 class="message footer__message"
@@ -633,6 +637,22 @@
           <!-- /.footer__contact-form -->
         </div>
         <!-- /.footer-wrapper -->
+        <div class="footer__bottom bottom">
+          <ul class="bottom__ul">
+            <li class="bottom__item">
+              <a href="" class="bottom__link">Disclaimer</a>
+            </li>
+            <li class="bottom__item">
+              <a href="" class="bottom__link">Conditions of use</a>
+            </li>
+            <li class="bottom__item">
+              <a href="" class="bottom__link">Cancellation policy</a>
+            </li>
+            <!-- <li class="bottom__item">Conditions of use</li>
+            <li class="bottom__item">Cancellation policy</li> -->
+          </ul>
+          <img src="img/payment.jpg" alt="payment by card" />
+        </div>
       </div>
       <!-- /.container -->
     </footer>
@@ -655,7 +675,7 @@
           />
           <input
             type="tel"
-            class="input modal__input"
+            class="input modal__input input__phone"
             placeholder="Phone Number*"
             name="phone"
             required
@@ -697,7 +717,7 @@
           />
           <input
             type="tel"
-            class="input modal__input"
+            class="input modal__input input__phone"
             placeholder="Phone Number*"
             name="phone"
             required
@@ -720,6 +740,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

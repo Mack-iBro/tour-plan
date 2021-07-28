@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <!-- yandex api -->
   </head>
   <body>
@@ -24,6 +25,7 @@
               src="img/horizontal-logo.svg"
               alt="logo : Best Tour Plan"
               class="logo__image"
+              data-aos="zoom-in-up"
             />
           </a>
 
@@ -170,7 +172,7 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide hotel-slider__item">
+              <div class="swiper-slide hotel-slider__item" data-aos="zoom-in">
                 <img class="hotel-slider__image" src="img/slide.jpg" alt="" />
               </div>
               <div class="swiper-slide hotel-slider__item">
@@ -209,7 +211,7 @@
           </div>
           <!-- /.swiper- contanier -->
           <div class="hotel-right">
-            <div class="booking">
+            <div class="booking" data-aos="fade-down">
               <div class="booking__info">
                 <div class="booking__price">
                   <span class="booking__start">price starts as</span>
@@ -255,7 +257,7 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div class="map">
+            <div class="map" data-aos="fade-up">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.7068615958538!2d37.48279671625409!3d55.83304718057489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5481b0f9c9949%3A0x1aa05ec2e60a61bf!2sDoubleTree%20by%20Hilton%20Hotel%20Moscow%20-%20Marina!5e0!3m2!1sru!2sru!4v1626281735960!5m2!1sru!2sru"
                 width="100%"
@@ -426,7 +428,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="zoom-in-right"
+            data-aos-delay="300"
+          >
             <img
               src="img/corner_of_chamarel.jpg"
               alt="The curious corner of chamarel"
@@ -435,7 +441,7 @@
             <h3 class="card__title">The curious corner of chamarel</h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-left">
             <img
               src="img/golf_club.jpg"
               alt="Gymkhana club golf course"
@@ -444,7 +450,7 @@
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-right">
             <img
               src="img/rock_with_a_waterfall.jpg"
               alt=""
@@ -453,7 +459,11 @@
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="zoom-in-left"
+            data-aos-delay="300"
+          >
             <img src="img/quest_at_sea.jpg" alt="" class="card__image" />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <button class="card__button">Book Now</button>
@@ -638,20 +648,20 @@
         </div>
         <!-- /.footer-wrapper -->
         <div class="footer__bottom bottom">
-          <ul class="bottom__ul">
-            <li class="bottom__item">
-              <a href="" class="bottom__link">Disclaimer</a>
-            </li>
-            <li class="bottom__item">
-              <a href="" class="bottom__link">Conditions of use</a>
-            </li>
-            <li class="bottom__item">
-              <a href="" class="bottom__link">Cancellation policy</a>
-            </li>
-            <!-- <li class="bottom__item">Conditions of use</li>
-            <li class="bottom__item">Cancellation policy</li> -->
-          </ul>
-          <img src="img/payment.jpg" alt="payment by card" />
+          <div class="bottom-wrapper">
+            <ul class="bottom__ul">
+              <li class="bottom__item">
+                <a href="" class="bottom__link">Disclaimer</a>
+              </li>
+              <li class="bottom__item">
+                <a href="" class="bottom__link">Conditions of use</a>
+              </li>
+              <li class="bottom__item">
+                <a href="" class="bottom__link">Cancellation policy</a>
+              </li>
+            </ul>
+            <img src="img/payment.jpg" alt="payment by card" />
+          </div>
         </div>
       </div>
       <!-- /.container -->
@@ -743,6 +753,7 @@
     <script src="js/jquery.mask.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

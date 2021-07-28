@@ -17,6 +17,14 @@ img {
   max-width: 100%;
 }
 
+button {
+  outline: none;
+}
+
+button:active {
+  background-color: #AF1835;
+}
+
 .input {
   background-color: #fff;
   border-radius: 4px;
@@ -1190,6 +1198,43 @@ template {
   color: #BDBDBD;
 }
 
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bottom-wrapper {
+  width: 696px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom__ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+
+.bottom__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bottom__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.bottom__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 textarea {
   resize: none;
 }
@@ -1566,6 +1611,10 @@ textarea {
   .card {
     width: 100%;
   }
+  .footer {
+    padding-top: 73px;
+    padding-bottom: 33px;
+  }
   .footer-wrapper {
     grid-template-columns: 1fr;
   }
@@ -1596,6 +1645,14 @@ textarea {
   .footer__contact-form {
     grid-row: 7;
     grid-column: 1;
+  }
+  .bottom-wrapper {
+    flex-wrap: wrap;
+  }
+  .bottom__ul {
+    flex-basis: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

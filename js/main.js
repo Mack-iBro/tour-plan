@@ -78,6 +78,7 @@ $('.newsletter').parallax();
     }
   });
   })
+  AOS.init();
     $('.input modal__input').mask('+7(000) 000 00 00');
 });
 

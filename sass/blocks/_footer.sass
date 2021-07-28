@@ -93,14 +93,31 @@
     font-size: 12px
     line-height: 15px
     color: $footer-text-color
-// .bottom
-//   display: flex
-//   align-items: center
-//   flex-direction: flex-end
-//   justify-content: space-between
-//   width: 696px
-//   &__ul
-//     margin: 0
-//     padding: 0
+.bottom
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  &-wrapper
+    width: 696px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__ul
+    display: flex
+    margin: 0
+    padding: 0
+    list-style: none
+    align-items: center
+  &__link
+    text-decoration: none
+    color: inherit
+  &__item:not(:last-child)
+    margin-right: 15px
+  &__item
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+
 textarea
   resize: none

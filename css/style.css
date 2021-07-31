@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Mulish', sans-serif;
+  font-family: 'Nunito', sans-serif;
   background-color: #F5FAFE;
   color: #333333;
 }
@@ -506,6 +507,7 @@ template {
   display: flex;
   align-items: center;
   text-decoration: none;
+  color: #333333;
 }
 
 .user__avatar {
@@ -516,7 +518,9 @@ template {
 }
 
 .user__name {
-  margin-left: 20px;
+  color: inherit;
+  margin-left: 18px;
+  font-family: "Mulish", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -549,8 +553,8 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
-  padding-bottom: 70px;
+  padding-top: 15px;
+  padding-bottom: 68px;
 }
 
 .hotel-info {
@@ -571,7 +575,7 @@ template {
 }
 
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 0 0 0 5px;
 }
 
 .hotel-name {
@@ -693,6 +697,8 @@ template {
 }
 
 .booking {
+  font-family: 'Nunito';
+  font-style: normal;
   background-color: #0A223D;
   color: #fff;
   border-radius: 8px;
@@ -704,7 +710,6 @@ template {
 .booking__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 9px;
 }
 
 .booking__price {
@@ -712,16 +717,16 @@ template {
   flex-direction: column;
 }
 
-.booking__start {
+.booking__title {
+  font-weight: normal;
   font-size: 10px;
-  line-height: 14px;
 }
 
 .booking__pricetag {
+  margin-top: 4px;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
-  line-height: 33px;
 }
 
 .booking__per-room {
@@ -785,6 +790,7 @@ template {
   font-size: 14px;
   line-height: 19px;
   border-radius: 4px;
+  padding: 14px 0 14px 0;
   background-color: #EC1F46;
   border: none;
   color: #fff;
@@ -809,7 +815,7 @@ template {
 
 .newsletter {
   position: relative;
-  padding: 98px 0px 87px 0px;
+  padding: 91px 0px 91px 0px;
 }
 
 .newsletter:before {
@@ -829,41 +835,47 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 731px;
+  max-width: 732px;
   margin: auto;
 }
 
 .newsletter-title {
+  margin: 10px 0 0 0;
   color: #fff;
-  font-style: normal;
+  font-family: "Mulish", sans-serif;
   font-weight: 300;
   font-size: 24px;
-  line-height: 30px;
 }
 
 .newsletter-title__strong {
-  display: block;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
   font-size: 36px;
-  line-height: 40px;
   text-transform: uppercase;
+}
+
+.newsletter__subscribe {
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: 131px;
+  margin-bottom: 0;
+  position: relative;
 }
 
 .subscribe {
   position: relative;
-  width: 350px;
   height: 55px;
 }
 
 .subscribe__input {
-  position: absolute;
-  width: 100%;
+  width: 350px;
   height: 100%;
-  padding-left: 33px;
+  padding-left: 32px;
+  padding-rop: 4px;
   border: none;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  padding-right: 75px;
   border-radius: 4px;
 }
 

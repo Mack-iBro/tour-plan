@@ -1,6 +1,6 @@
 .hotel
-  padding-top: 23px
-  padding-bottom: 70px
+  padding-top: 15px
+  padding-bottom: 68px
   &-info
     display: flex
     align-items: center
@@ -13,7 +13,7 @@
       margin-top: 4px
       margin-bottom: 0
     &__description
-      margin: 5px 0
+      margin: 0 0 0 5px
   &-name
     font-size: 24px
     line-height: 30px
@@ -101,6 +101,8 @@
     line-height: 18px
 
 .booking
+  font-family: 'Nunito'
+  font-style: normal
   background-color: $dark
   color: $light
   border-radius: 8px
@@ -110,19 +112,18 @@
   &__info
     display: flex
     justify-content: space-between
-    margin-bottom: 9px
+    margin-bottom:
   &__price
     display: flex
     flex-direction: column
-  &__start
-    font-weight:
+  &__title
+    font-weight: normal
     font-size: 10px
-    line-height: 14px
   &__pricetag
+    margin-top: 4px
     font-style: normal
     font-weight: 800
     font-size: 24px
-    line-height: 33px
   &__per-room
     font-style: normal
     font-weight: normal
@@ -168,6 +169,7 @@
     font-size: 14px
     line-height: 19px
     border-radius: 4px
+    padding: 14px 0 14px 0
     background-color: $primory
     border: none
     color: $light

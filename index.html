@@ -9,15 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
-      rel="preload"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header class="navbar navbar--mobile--fixed">
@@ -155,11 +157,7 @@
             </p>
           </div>
           <!-- /.hotel-info__text -->
-          <div
-            data-toggle="modal"
-            data-href="#rating-modal"
-            class="rating hotel-info__rating"
-          >
+          <div data-href="#rating-modal" class="rating hotel-info__rating">
             <span class="rating__text">User Ratting</span>
             <span class="rating__counter"
               >4.5/<span class="rating__min">5</span></span
@@ -223,7 +221,7 @@
             <div class="booking" data-aos="fade-down">
               <div class="booking__info">
                 <div class="booking__price">
-                  <span class="booking__start">price starts as</span>
+                  <span class="booking__title">price starts as</span>
                   <strong class="booking__pricetag">$ 8,500</strong>
                   <span class="booking__per-room">per room / night</span>
                 </div>
